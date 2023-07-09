@@ -37,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
           }
       });
 
-
+      button2.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              num = Double.parseDouble(edittext.getText().toString());
+              num2 = (num-32)*0.56;
+              textView.setText(String.valueOf(num2));
+          }
+      });
     }
 }
